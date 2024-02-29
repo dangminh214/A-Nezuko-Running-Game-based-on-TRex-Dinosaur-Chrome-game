@@ -11,7 +11,7 @@ body {
     width: 750px;
     height: 250px;
     border: 1px solid black;
-    background-image: url('background.jpg');
+    background-image: url('img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,7 +44,7 @@ body {
 #block{
     width: 40px;
     height: 60px;
-    background-image:  url('muzan.png');
+    background-image:  url('img/muzan.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,7 +58,7 @@ body {
     width: 60px;
     height: 60px;
     left: 10px;
-    background-image:  url('nezuko.png');
+    background-image:  url('img/nezuko.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
