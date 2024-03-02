@@ -6,18 +6,13 @@ var character = document.getElementById("character");
 var gameArea = document.getElementById("game");
 var restartBtn = document.getElementById("restartBtn")
 var startBtn = document.getElementById("start_btn")
+const blockContainer = document.getElementById('blockContainer');
 
 var score = 0
 var isDead = false;
 var isJumping = false;
 var isStarted = false;
 var isFirstJump = true;
-
-gameArea.addEventListener('click', function() {
-    if (isStarted) {
-
-    }
-})
 
 function jump() {
     if (isDead || isJumping || !isStarted || isFirstJump) {
@@ -62,7 +57,7 @@ function start_game() {
     scroreCounting;
 }
 
-setInterval(function() {
+checkDead = setInterval(function() {
     if(isStarted) {
         var checkDead = setInterval(function() {
             var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -75,35 +70,22 @@ setInterval(function() {
                 clearInterval(scroreCounting);
                 clearInterval(checkDead);
                 Loose_Warning.textContent =  `Sorry, you have lost the game, your score is: ${score}`
-                Loose_Warning.style.display = "block";
-                if (Loose_Warning.style.display === "block") {
-                    restartBtn.style.display = "block";
-                }
+                restartBtn.style.display = "block";
+                Loose_Warning.style.display = "block";      
                 isStarted = false;
             }
         }, 0)
     }
-    
 },1)
 
-/*
-    function createBlock() {
-        var gameArea = document.getElementById("game");
-        
-        // Create a new block element
-        var block = document.createElement("div");
-        block.setAttribute("id","block");
-        
-        // Generate a random width between 20px and 60px
-        var randomWidth = Math.floor(Math.random() * (60 - 20 + 1)) + 20;
-        
-        // Set the random width for the block element
-        block.style.width = randomWidth + "px";
-        
-        // Add the block to the game area
-        gameArea.appendChild(block);
+
+setInterval(function createBlock() {
+    if (isStarted && !isDead) {
+        const randomNumber = Math.floor(Math.random() * 3) + 1; 
+        document.documentElement.style.setProperty('--number', randomNumber);
+        console.log('randomWidthStack: ',randomNumber)
     }
-*/
+}, 1200)
 
 function restart_game() {
     window.location.reload();

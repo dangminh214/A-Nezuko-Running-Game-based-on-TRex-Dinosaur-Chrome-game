@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+:root {
+    --number: 1;
+}
+
 body {
     zoom: 230%
 }
@@ -53,14 +57,14 @@ body {
 }
 
 #block{
-    width: 40px;
+    width: calc(var(--number) * 34px);
     height: 60px;
     background-image:  url('img/muzan.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat-x;
     background-position: center;
     position: relative;
-    top: 140px;
+    top: 130px;
     left: 480px;
 }
 
