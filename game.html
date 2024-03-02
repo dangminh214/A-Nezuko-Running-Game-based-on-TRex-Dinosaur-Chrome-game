@@ -9,14 +9,18 @@
 <body>
     <div id="game">
         <button id="start_btn" onclick="start_game()">Are you ready ? Let's gooo</button>
+        <button id="pauseBtn" onclick="pauseGame()">Pause</button>
         <div id="character"></div>
         <div id="block"></div>
         <div id="blockContainer"></div>
         <div id="score">Score: 0</div>
+        <div id="Pause_Warning">The is paused</div>
+        <button id ="resumeBtn" onclick="resumeGame()">Resume</button>
         <div id="Loose_Warning"></div>
         <button id ="restartBtn" onclick="restart_game()">Try Again</button>
     </div>
-
+    
+    <script src ="script.js"></script>
 </body>
-<script src ="script.js"></script>
+
 </html>
