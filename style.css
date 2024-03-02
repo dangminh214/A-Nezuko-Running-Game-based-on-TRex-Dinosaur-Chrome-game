@@ -7,6 +7,17 @@ body {
     zoom: 230%
 }
 
+#start_btn{
+    display: block;
+    position: fixed;
+    top: calc(50% + 50px); /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 200px;
+    height: 50px;
+}
+
 #game {
     width: 750px;
     height: 250px;
@@ -51,7 +62,6 @@ body {
     position: relative;
     top: 140px;
     left: 480px;
-    animation: block 1s infinite linear;
 }
 
 #character{
