@@ -73,7 +73,7 @@ function checkLose() {
             var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
             if (blockLeft <= 20 && blockLeft > 0 && characterTop >= 140) {
                 isDead = true;
-                block.style.animation = "paused";
+                block.style.animationPlayState = "paused";
                 character.style.animation = "paused";
                 clearInterval(scroreCounting);
                 clearInterval(checkDead)
