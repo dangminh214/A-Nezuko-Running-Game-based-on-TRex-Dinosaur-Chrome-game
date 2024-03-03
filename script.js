@@ -73,14 +73,14 @@ function checkLose() {
             var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
             if (blockLeft <= 20 && blockLeft > 0 && characterTop >= 140) {
                 isDead = true;
-                block.style.animationPlayState = "paused";
-                character.style.animationPlayState = "paused";
+                block.style.animation = "paused";
+                character.style.animation = "paused";
                 clearInterval(scroreCounting);
+                clearInterval(checkDead)
                 Loose_Warning.textContent =  `Sorry, you have lost the game, your score is: ${score}`
                 restartBtn.style.display = "block";
                 Loose_Warning.style.display = "block";      
                 isStarted = false;
-                clearInterval(checkDead)
                 checkIfHighScore();
             }
         }, 0)
