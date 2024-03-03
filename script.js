@@ -66,7 +66,7 @@ function start_game() {
     scroreCounting;
 }
 
-checkDead = setInterval(function() {
+function checkLose() {
     if(isStarted || !isPaused) {
         var checkDead = setInterval(function() {
             var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -83,11 +83,13 @@ checkDead = setInterval(function() {
                 restartBtn.style.display = "block";
                 Loose_Warning.style.display = "block";      
                 isStarted = false;
+                clearInterval(checkDead)
                 checkIfHighScore();
             }
         }, 0)
     }
-},1)
+}
+checkDead = setInterval(checkLose,1)
 
 function checkIfHighScore() {
     
