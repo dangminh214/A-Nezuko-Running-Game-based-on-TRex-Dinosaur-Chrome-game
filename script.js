@@ -76,7 +76,6 @@ function checkLose() {
                 block.style.animationPlayState = "paused";
                 character.style.animationPlayState = "paused";
                 clearInterval(scroreCounting);
-                clearInterval(runningTime);
                 Loose_Warning.textContent =  `Sorry, you have lost the game, your score is: ${score}`
                 restartBtn.style.display = "block";
                 Loose_Warning.style.display = "block";      
