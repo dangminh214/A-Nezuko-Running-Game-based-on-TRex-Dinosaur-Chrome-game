@@ -71,7 +71,6 @@ function checkLose() {
         var checkDead = setInterval(function() {
             var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
             var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-            restartBtn.style.display = "none";
             if (blockLeft <= 20 && blockLeft > 0 && characterTop >= 140) {
                 isDead = true;
                 block.style.animationPlayState = "paused";
