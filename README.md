@@ -9,6 +9,8 @@
 
 ### Update: Fix bug and make the game centralize 
 ![image](https://github.com/dangminh214/A-Nezuko-Running-Game-based-on-TRex-Dinosaur-Chrome-game/assets/51837721/2b393ccc-2c0e-4f1d-9ce6-e5e684c5863f)
+![image](https://github.com/dangminh214/A-Nezuko-Running-Game-based-on-TRex-Dinosaur-Chrome-game/assets/51837721/34a46d59-0fba-427f-8d93-28e1699b00eb)
+
 
 ### If you have any suggestions, please send me a message. I will create more characters and make it more difficult in the future
 ### Hope Everyone likes and enjoy the game!
