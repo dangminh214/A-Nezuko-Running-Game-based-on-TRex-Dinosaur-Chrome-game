@@ -3,6 +3,7 @@
 ![image](https://github.com/dangminh214/A-Nezuko-Running-Game-based-on-TRex-Dinosaur-Chrome-game/assets/51837721/fc5f64a6-9e01-4f14-ba81-10203035154c)
 
 ## To run the game: To run the game, just open HTML file with your browser
+## Or maybe you can try using live preview https://dangminh214.github.io/A-Nezuko-Running-Game-based-on-TRex-Dinosaur-Chrome-game/
 
 ## Update: the game is now more difficult. Enemy will be now randomed from 1 to 3 to make the game more difficult
 ![image](https://github.com/dangminh214/A-Nezuko-Running-Game-based-on-TRex-Dinosaur-Chrome-game/assets/51837721/89863f3f-8536-4822-a25c-0338f106784e)
